@@ -12,6 +12,9 @@
 ![alt text](https://github.com/ajayyadavexpo/laravel-11-multi-auth/blob/main/image.png?raw=true)
 
 
+## YouTube Video (https://www.youtube.com/watch?v=LtzPygnIqn4)
+
+
 ## Laravel + Tailwind Css Starter Project with Multi-Auth (Admin / Teacher and User )
 - Admin login ( http://localhost:8000/admin/login )
 - Teacher login and register (http://localhost:8000/teacher/login )
