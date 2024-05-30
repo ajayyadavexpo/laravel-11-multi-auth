@@ -9,7 +9,7 @@
 
 # Admin / Teacher / User (Login, Register and Dashboard page) 
 
-![alt text](https://github.com/ajayyadavexpo/laravel-starter/blob/main/admin-login.png?raw=true)
+![alt text](https://github.com/ajayyadavexpo/laravel-11-multi-auth/blob/main/image.png?raw=true)
 
 
 ## Laravel + Tailwind Css Starter Project with Multi-Auth (Admin / Teacher and User )
