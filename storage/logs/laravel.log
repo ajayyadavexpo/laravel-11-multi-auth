@@ -1,0 +1,283 @@
+[2024-04-16 15:37:59] local.ERROR: Route [admin.login] not defined. {"view":{"view":"D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\resources\\views\\welcome.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1357948333 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#303</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1357948333\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Route [admin.login] not defined. at D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(831): Illuminate\\Routing\\UrlGenerator->route('admin.login', Array, true)
+#1 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\resources\\views\\welcome.blade.php(65): route('admin.login')
+#2 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\youtube-php\\\\...')
+#3 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\youtube-php\\\\...', Array)
+#5 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(73): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\youtube-php\\\\...', Array)
+#6 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(208): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\youtube-php\\\\...', Array)
+#7 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(191): Illuminate\\View\\View->getContents()
+#8 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(160): Illuminate\\View\\View->renderContents()
+#9 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(70): Illuminate\\View\\View->render()
+#10 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#54 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\youtube-php\\\\...')
+#55 {main}
+
+[previous exception] [object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [admin.login] not defined. at D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(831): Illuminate\\Routing\\UrlGenerator->route('admin.login', Array, true)
+#1 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\storage\\framework\\views\\6f7f6c4aa28e56a567652262ffbfce00.php(65): route('admin.login')
+#2 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\youtube-php\\\\...')
+#3 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\youtube-php\\\\...', Array)
+#5 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(73): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\youtube-php\\\\...', Array)
+#6 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(208): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\youtube-php\\\\...', Array)
+#7 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(191): Illuminate\\View\\View->getContents()
+#8 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(160): Illuminate\\View\\View->renderContents()
+#9 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(70): Illuminate\\View\\View->render()
+#10 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#54 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\youtube-php\\\\...')
+#55 {main}
+"} 
+[2024-04-16 16:04:12] local.ERROR: SQLSTATE[HY000]: General error: 1 table "admins" already exists (Connection: sqlite, SQL: create table "admins" ("id" integer primary key autoincrement not null, "name" varchar not null, "email" varchar not null, "email_verified_at" datetime, "password" varchar not null, "remember_token" varchar, "created_at" datetime, "updated_at" datetime)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1 table \"admins\" already exists (Connection: sqlite, SQL: create table \"admins\" (\"id\" integer primary key autoincrement not null, \"name\" varchar not null, \"email\" varchar not null, \"email_verified_at\" datetime, \"password\" varchar not null, \"remember_token\" varchar, \"created_at\" datetime, \"updated_at\" datetime)) at D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:813)
+[stacktrace]
+#0 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback('create table \"a...', Array, Object(Closure))
+#1 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(560): Illuminate\\Database\\Connection->run('create table \"a...', Array, Object(Closure))
+#2 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(109): Illuminate\\Database\\Connection->statement('create table \"a...')
+#3 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(564): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\SQLiteConnection), Object(Illuminate\\Database\\Schema\\Grammars\\SQLiteGrammar))
+#4 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(418): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(357): Illuminate\\Database\\Schema\\Builder->create('admins', Object(Closure))
+#6 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\database\\migrations\\2024_04_16_152512_create_teachers_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(482): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#8 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(408): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\SQLiteConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#9 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(417): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#10 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(214): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#11 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(40): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(745): Illuminate\\Console\\View\\Components\\Task->render('2024_04_16_1525...', Object(Closure))
+#13 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(214): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2024_04_16_1525...', Object(Closure))
+#14 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(179): Illuminate\\Database\\Migrations\\Migrator->runUp('D:\\\\youtube-php\\\\...', 3, false)
+#15 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(122): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#16 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#17 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(622): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#19 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#20 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#21 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#23 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#24 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#25 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(212): Illuminate\\Container\\Container->call(Array)
+#26 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#28 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Application.php(1049): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Application.php(318): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1183): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#34 {main}
+
+[previous exception] [object] (PDOException(code: HY000): SQLSTATE[HY000]: General error: 1 table \"admins\" already exists at D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:565)
+[stacktrace]
+#0 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(565): PDO->prepare('create table \"a...')
+#1 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('create table \"a...', Array)
+#2 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback('create table \"a...', Array, Object(Closure))
+#3 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(560): Illuminate\\Database\\Connection->run('create table \"a...', Array, Object(Closure))
+#4 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(109): Illuminate\\Database\\Connection->statement('create table \"a...')
+#5 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(564): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\SQLiteConnection), Object(Illuminate\\Database\\Schema\\Grammars\\SQLiteGrammar))
+#6 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(418): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#7 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(357): Illuminate\\Database\\Schema\\Builder->create('admins', Object(Closure))
+#8 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\database\\migrations\\2024_04_16_152512_create_teachers_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#9 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(482): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#10 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(408): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\SQLiteConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#11 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(417): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(214): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#13 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(40): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#14 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(745): Illuminate\\Console\\View\\Components\\Task->render('2024_04_16_1525...', Object(Closure))
+#15 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(214): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2024_04_16_1525...', Object(Closure))
+#16 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(179): Illuminate\\Database\\Migrations\\Migrator->runUp('D:\\\\youtube-php\\\\...', 3, false)
+#17 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(122): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#18 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#19 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(622): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#20 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#21 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#22 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(212): Illuminate\\Container\\Container->call(Array)
+#28 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Application.php(1049): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Application.php(318): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1183): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#36 {main}
+"} 
+[2024-04-21 10:33:22] local.ERROR: Command "make:middleare" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:middleare\" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view at D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Application.php:704)
+[stacktrace]
+#0 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Application.php(260): Symfony\\Component\\Console\\Application->find('make:middleare')
+#1 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1183): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 D:\\youtube-php\\test\\MultiAuthSystemLaravel11\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
